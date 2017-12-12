@@ -1,0 +1,111 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* ===============================================================================================================================================================
+
+                                                                    HEADER
+
+================================================================================================================================================================== */
+
+header {
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #262626; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#262626, #1a1a1a); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#262626, #1a1a1a); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#262626, #1a1a1a); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#262626, #1a1a1a); /* Standard syntax (must be last) */
+}
+
+.nav {
+	display: flex;
+	justify-content: flex-end;
+}
+
+header img {
+	height: 50px;
+	margin: 5px;
+}
+
+p {
+	color: #f2f2f2;
+	margin-left: 5px;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+/* ===============================================================================================================================================================
+
+                                                                    MAIN
+
+================================================================================================================================================================== */
+
+.main {
+	background-color: #333333;
+	height: 662px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 1fr 9fr;
+}
+
+.sidebar {
+	background-color: #262626;
+	grid-column: 1;
+	grid-row: span 2;
+
+}
+
+
+ /*  SEARCHBAR */
+input[type=text] {
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+input {
+	margin: 10px 0 0 12px;
+}
+
+.sidebar h2 {
+	padding: 5px;
+	margin: 8px;
+	font-family: 'Raleway', sans-serif;
+	border-bottom: 1px solid #0d0d0d;
+}
+
+a:link {
+	color: #f2f2f2;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #f2f2f2;
+}
+
+a:hover {
+	color: #b3b3b3;
+}
+
+.contenttitle {
+	grid-column: span 5;
+	font-family: 'Raleway', sans-serif;
+	color: #f2f2f2;
+	padding: 10px;
+	border-bottom: 1px solid #0d0d0d;
+}
+
+.content {
+	grid-column: span 5;
+}
+
+.content p {
+	padding: 10px;
+}
