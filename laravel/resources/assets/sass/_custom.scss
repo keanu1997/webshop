@@ -1,0 +1,98 @@
+body.admin {
+    padding-top: 50px;
+    background: $admin-main-bg;
+    font-family: 'Roboto', sans-serif;
+}
+
+// Sidebar
+#sidebar-wrapper {
+    z-index: 1;
+    padding-top: 15px;
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    overflow-y: hidden;
+    background: $admin-sidebar-bg;
+    opacity: 0.9;
+}
+
+i#menu-toggle {
+    font-size: 20px;
+    color: $admin-btn-color;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+// sidebar Styling
+.sidebar-nav {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-nav li {
+    width: 100%;
+    &:hover {
+        background: $admin-btn-color;
+    }
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: $admin-text-color;
+    text-align: center;
+    padding: 15px 0;
+    .sidebar-link {
+        font-size: 20px;
+        display: none;
+    }
+}
+
+// Admin Page Content
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 75px;
+    color: $admin-text-color;
+}
+
+// Change the with of the sidebar to display it
+#wrapper.menuDisplayed {
+
+    // sidebar Styling
+    .sidebar-nav {
+        padding: 0;
+        list-style: none;
+        align-items: flex-start;
+    }
+
+    i#menu-toggle {
+        margin-left: 20px;
+    }
+
+    .sidebar-nav li a {
+        display: block;
+        text-decoration: none;
+        color: $admin-text-color;
+        text-align: left;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        .sidebar-link {
+            font-size: 20px;
+            display: block;
+            margin-left: 15px;
+        }
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #page-content-wrapper {
+        padding-left: 265px;
+    }
+}
